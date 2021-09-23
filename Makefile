@@ -1,6 +1,5 @@
 VPATH = src
 
-DC = dot
 LFLAGS = -interaction=nonstopmode -output-directory=build -synctex=1
 RFLAGS = --pdf
 
