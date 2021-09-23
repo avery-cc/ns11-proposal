@@ -1,29 +1,18 @@
 # README #
 
-This README would normally document whatever steps are necessary to get your application up and running.
-
 ### What is this repository for? ###
 
-* Quick summary
-* Version
-* [Learn Markdown](https://bitbucket.org/tutorials/markdowndemo)
+This repository is dedicated to the drafting of the 
+[UNP NS-11 Proposal](https://universitynanosat.org/downloads/rfp-ns-11.pdf)
 
 ### How do I get set up? ###
 
-* Summary of set up
-* Configuration
-* Dependencies
-* Database configuration
-* How to run tests
-* Deployment instructions
+`make all`
 
-### Contribution guidelines ###
+### Contribution ###
 
-* Writing tests
-* Code review
-* Other guidelines
+[LaTeX-Tutorial](https://latex-tutorial.com/)
 
 ### Who do I talk to? ###
-
 * Repo owner or admin
 * Other community or team contact
