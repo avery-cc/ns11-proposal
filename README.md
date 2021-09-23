@@ -7,10 +7,8 @@ This repository is dedicated to the drafting of the
 
 ### How do I get set up? ###
 
-````
-sudo apt install texlive
-make all
-```
+`sudo apt install texlive`
+`make all`
 
 ### Contribution ###
 
