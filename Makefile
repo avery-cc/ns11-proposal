@@ -1,4 +1,4 @@
-VPATH = src build
+VPATH = src build images
 
 LFLAGS = -interaction=nonstopmode -output-directory=build -synctex=1
 RFLAGS = --pdf
@@ -12,9 +12,9 @@ ns11-proposal-uvm-vtc.pdf: ns11-proposal-uvm-vtc.tex
 	pdflatex $(LFLAGS) $<
 
 %.aux: %.tex
-	latex $(LFLAGS) $<
+	pdflatex $(LFLAGS) $<
 	bibtex build/$@
-	latex $(LFLAGS) $<
+	pdflatex $(LFLAGS) $<
 
 ns11-proposal-uvm-vtc.tex: structure.tex header.tex \
 abstract.tex project_narrative.tex statement_of_objectives.tex impact.tex \
