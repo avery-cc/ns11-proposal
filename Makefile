@@ -1,4 +1,4 @@
-VPATH = src
+VPATH = src build
 
 LFLAGS = -interaction=nonstopmode -output-directory=build -synctex=1
 RFLAGS = --pdf
@@ -6,8 +6,15 @@ RFLAGS = --pdf
 all: ns11-proposal-uvm-vtc.pdf
 
 ns11-proposal-uvm-vtc.pdf: ns11-proposal-uvm-vtc.tex
+
+%.pdf: %.tex %.aux
 	pdflatex $(LFLAGS) $<
 	pdflatex $(LFLAGS) $<
+
+%.aux: %.tex
+	latex $(LFLAGS) $<
+	bibtex build/$@
+	latex $(LFLAGS) $<
 
 ns11-proposal-uvm-vtc.tex: structure.tex header.tex \
 abstract.tex project_narrative.tex statement_of_objectives.tex impact.tex \
@@ -18,4 +25,4 @@ footer.tex
 
 .PHONY: clean
 clean:
-	rm -rfv *~ build/* *.tex
+	rm -rfv *~ *.tex build/* src/*~
