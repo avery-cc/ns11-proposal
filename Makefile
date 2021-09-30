@@ -5,7 +5,7 @@ RFLAGS = --pdf
 
 all: ns11-proposal-uvm-vtc.pdf
 
-ns11-proposal-uvm-vtc.pdf: ns11-proposal-uvm-vtc.tex
+ns11-proposal-uvm-vtc.pdf:
 
 %.pdf: %.tex %.aux
 	pdflatex $(LFLAGS) $<
